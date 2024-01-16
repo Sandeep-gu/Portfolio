@@ -11,6 +11,7 @@
 }
 .skills_content_wrapper_inner_category_text {
   display: inline-block;
+  position: relative;
   color: var(--yellow-theme-main-color);
   font-size: 22px;
   font-weight: 700;
