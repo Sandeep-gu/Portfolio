@@ -1,0 +1,87 @@
+.home {
+  position: relative;
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap; /* Set flex-wrap to a value other than nowrap */
+  height: calc(86vh);
+}
+
+.home_text_wrapper {
+  display: flex;
+  font-size: 5rem;
+  line-height: 8rem;
+  justify-content: center;
+}
+
+.home_text_wrapper h1 {
+  color: var(--yellow-theme-main-color);
+  margin: 0;
+
+  font-weight: 100;
+
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingEffectAnimation 2.5s steps(30, end);
+}
+
+.home_hire_me {
+  display: flex;
+  justify-content: center;
+}
+
+.home_hire_me button {
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 10px 65px;
+  background: transparent;
+  color: var(--yellow-theme-main-color);
+  border: 1.5px solid var(--yellow-theme-main-color);
+  border-radius: 4px;
+  font-weight: 100;
+}
+
+.home_hire_me button:hover {
+  background: var(--yellow-theme-main-color);
+  color: #000000;
+}
+@media only screen and (max-width: 550px) {
+  .home_text_wrapper {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  .home_text_wrapper h1 {
+    animation-duration: 1.5s; /* Adjust the animation duration for smaller screens */
+  }
+}
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+  .home_text_wrapper {
+    font-size: 3rem;
+    line-height: 6rem;
+  }
+  .home_text_wrapper h1 {
+    animation-duration: 2s; /* Adjust the animation duration for medium screens */
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  .home_text_wrapper {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  .home_text_wrapper h1 {
+    animation-duration: 2.5s; /* Adjust the animation duration for larger screens */
+  }
+}
+@keyframes typingEffectAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
