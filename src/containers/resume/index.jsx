@@ -30,22 +30,20 @@ export default function Resume() {
                 contentStyle={{
                   background: "none",
                   color: "var(--yellow-theme-sub-text-color)",
-                  border: "1.5px solid var(--yellow-theme-main-border)",
+                  border: "1.5px solid var(--yellow-theme-sub-text-color)",
                 }}
                 date="2020 - Present"
                 icon={<MdWork />}
                 iconStyle={{
                   background: "#181818",
-                  color: "var(--yellow-theme-main-color",
+                  color: "var(--yellow-theme-main-color)",
                 }}
               >
                 <div className="vertical_timeline_element_title_wrapper">
                   <h3>{item.title}</h3>
                   <h4>{item.subTitle}</h4>
+                  <h5>{item.description}</h5>
                 </div>
-                <p className="vertical_timeline_title_wrapper_description">
-                  {item.description}
-                </p>
               </VerticalTimelineElement>
             ))}
           </VerticalTimeline>
@@ -63,22 +61,20 @@ export default function Resume() {
                 contentStyle={{
                   background: "none",
                   color: "var(--yellow-theme-sub-text-color)",
-                  border: "1.5px solid var(--yellow-theme-main-border)",
+                  border: "1.5px solid var(--yellow-theme-sub-text-color)",
                 }}
                 date="2020 - Present"
                 icon={<MdWork />}
                 iconStyle={{
                   background: "#181818",
-                  color: "var(--yellow-theme-main-color",
+                  color: "var(--yellow-theme-main-color)",
                 }}
               >
                 <div className="vertical_timeline_element_title_wrapper">
                   <h3>{item.title}</h3>
                   <h4>{item.subTitle}</h4>
+                  <h5>{item.description}</h5>
                 </div>
-                {/* <p className="vertical_timeline_element_title_wrapper_description">
-                  {item.description}
-                </p> */}
               </VerticalTimelineElement>
             ))}
           </VerticalTimeline>
